@@ -3,6 +3,7 @@ import streamlit as st
 from app_tab1 import rendor_story_tab
 from app_tab2 import render_mktg_campaign_tab
 from app_tab3 import render_image_playground_tab
+from app_tab4 import render_video_playground_tab
 from vertexai.preview.generative_models import GenerativeModel
 import vertexai
 import logging
@@ -38,3 +39,6 @@ with tab2:
 
 with tab3:
     render_image_playground_tab(multimodal_model_pro)
+
+with tab4:
+    render_video_playground_tab(multimodal_model_pro)
