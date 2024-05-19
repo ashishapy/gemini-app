@@ -1,6 +1,7 @@
 import os
 import streamlit as st
 from app_tab1 import rendor_story_tab
+from app_tab2 import render_mktg_campaign_tab
 from vertexai.preview.generative_models import GenerativeModel
 import vertexai
 import logging
@@ -30,3 +31,6 @@ tab1, tab2, tab3, tab4 = st.tabs(["Story", "Marketing Campaign", "Image Playgrou
 
 with tab1:
     rendor_story_tab(text_model_pro)
+
+with tab2:
+    render_mktg_campaign_tab(text_model_pro)
